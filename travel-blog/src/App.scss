@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 $site-width: 1200px;
 $hero-width: 1600px;
@@ -6,15 +6,147 @@ $profile-image-width: 300px;
 
 $gutter: 8px;
 $gray: #333;
-$primary: #1977F3;
-$primary-light: #EEF5FE;
+$primary: #1977f3;
+$primary-light: #eef5fe;
 
 $small-breakpoint: 500px;
 $medium-breakpoint: 960px;
 
 .app {
   * {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+}
+html {
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  background-color: #f4f8fe;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hdr-logo {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 17%;
+}
+
+.logo-ln1 {
+  font-size: 1.4rem;
+}
+
+.logo-ln2 {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.hdr-nav {
+  width: 14rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin-right: 17%;
+}
+
+.link {
+  font-size: 0.85rem;
+  margin-left: 2rem;
+}
+.current {
+  color: white;
+  background: #1877f3;
+  border-radius: 0.15rem;
+  padding: 0.38rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+}
+.hero-img {
+  width: 92vw;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+  width: 67vw;
+  margin: auto;
+}
+.headshot {
+  border-radius: 50%;
+  height: 18vw;
+  margin-right: 1rem;
+}
+.article {
+  margin-left: 1rem;
+}
+.heading {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+}
+.about {
+  width: 50vw;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer {
+  width: 100%;
+  background: #1877f3;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 0.75rem;
+}
+.ftr-year {
+  margin-left: 17%;
+}
+.ftr-link {
+  margin-right: 17%;
+}
+
+@media only screen and (max-width: 960px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+  .hdr-nav {
+    display: none;
   }
 }
